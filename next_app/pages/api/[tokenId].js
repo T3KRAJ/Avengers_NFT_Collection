@@ -5,6 +5,6 @@ export default function handler(req, res) {
   res.status(200).json({
     name: "Avengers NFT #" + tokenId,
     description: "Avengers NFT is a collection of avengers in crypto",
-    image: image_url + tokenId + ".svg",
+    image: image_url + tokenId + ".png",
   });
 }
