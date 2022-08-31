@@ -98,7 +98,7 @@ export default function Home() {
           signer
         );
         const tx = await whitelistContract.presaleMint({
-          value: utils.parseEther("0.01"),
+          value: utils.parseEther("0.012"),
         });
         setLoading(true);
         await tx.wait();
@@ -118,7 +118,7 @@ export default function Home() {
           signer
         );
         const tx = await whitelistContract.mint({
-          value: utils.parseEther("0.01"),
+          value: utils.parseEther("0.012"),
         });
         setLoading(true);
         await tx.wait();

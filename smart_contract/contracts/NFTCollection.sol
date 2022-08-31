@@ -16,7 +16,7 @@
     uint256 public constant _price = 0.01 ether;
     bool public preSaleStarted;
     uint256 public endPreSaleAt;
-    uint256 public NFTTokenId = 1;
+    uint256 public NFTTokenId = 0;
 
     modifier onlyWhenNotPaused {
         require(!contractPaused, "Contract currently paused");
