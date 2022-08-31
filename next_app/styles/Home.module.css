@@ -1,50 +1,62 @@
 .main {
   min-height: 90vh;
-  background-color: aquamarine;
-  display: flex;
-  color: blueviolet;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-family: "Courier New", Courier, monospace;
+  background-image: url('/assets/avengers_background.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 110%;
+        display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-family: "Courier New", Courier, monospace;
+        
+}
+
+.card{
+  opacity: 1;
 }
 
 .footer {
   display: flex;
   padding: 2rem 0;
-  background-color: blueviolet;
+  background-color: black;
   color: aquamarine;
   justify-content: center;
   align-items: center;
 }
 
-.image {
-  width: 70%;
-  height: 50%;
-  margin-left: 20%;
-}
-
 .title {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: cyan;
+  font-weight: 900;
   margin: 2rem 0;
 }
 
 .description {
   line-height: 1;
-  margin: 2rem 0;
+  margin: 1.72rem 0;
+  color: rgb(255, 255, 255);
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
+.opensea_link{
+    color: antiquewhite;
+      padding: 10px;
+      margin: 1.75rem 0 !important;
+      background: indigo;
+      text-decoration: none;
+}
 .button {
   border-radius: 4px;
-  background-color: blue;
+  background-color: green;
   border: none;
   color: #ffffff;
+  margin-top: 18px;
   font-size: 15px;
   padding: 20px;
   width: 200px;
   cursor: pointer;
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
 }
 
 @media (max-width: 1000px) {
@@ -60,6 +72,7 @@
   .main {
     width: 100%;
     padding: 0 15px;
+    background-size: cover;
     flex-direction: column;
     justify-content: center;
     align-items: center;

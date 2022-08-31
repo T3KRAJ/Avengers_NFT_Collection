@@ -245,21 +245,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
-        <div>
-          <h1 className={styles.title}>Welcome to Avengers NFTs!</h1>
+        <div className={styles.card}>
+          <h1 className={styles.title}>Mint Your Avenger NFT!</h1>
           <div className={styles.description}>
             Its an NFT collection for Avengers in Crypto.
           </div>
           <div className={styles.description}>
-            {tokenIdsMinted}/20 have been minted
+            {tokenIdsMinted}/20 have been minted <br />
           </div>
+          <div>
+            
+          </div>
+          <a
+            href="https://testnets.opensea.io/collection/avengers-klj6vvvhm4"
+            className={styles.opensea_link}
+            target="__blank"
+          >
+            View all NFTs minted.
+          </a><br/>
           {renderButton()}
         </div>
       </div>
 
-      <footer className={styles.footer}>
-        Made with &#10084; by T3KRAJ
-      </footer>
+      <footer className={styles.footer}>Made with &#10084; by T3KRAJ</footer>
     </div>
   );
 }
