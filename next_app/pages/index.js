@@ -98,7 +98,7 @@ export default function Home() {
           signer
         );
         const tx = await whitelistContract.presaleMint({
-          value: utils.parseEther("0.012"),
+          value: utils.parseEther("0.01"),
         });
         setLoading(true);
         await tx.wait();
@@ -118,7 +118,7 @@ export default function Home() {
           signer
         );
         const tx = await whitelistContract.mint({
-          value: utils.parseEther("0.012"),
+          value: utils.parseEther("0.01"),
         });
         setLoading(true);
         await tx.wait();
@@ -246,23 +246,23 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div className={styles.card}>
-          <h1 className={styles.title}>Mint Your Avenger NFT!</h1>
+          <h1 className={styles.title}>Welcome to Avenger NFTs!</h1>
           <div className={styles.description}>
-            Its an NFT collection for Avengers in Crypto.
+            Mint your own Marvel Avenger NFT from the collection.
           </div>
           <div className={styles.description}>
-            {tokenIdsMinted}/20 have been minted <br />
+            {tokenIdsMinted}/20 have been minted so far.
+            <br />
           </div>
-          <div>
-            
-          </div>
+          <div></div>
           <a
-            href="https://testnets.opensea.io/collection/avengers-klj6vvvhm4"
+            href="https://testnets.opensea.io/collection/avengers-gc6e7iv6wn"
             className={styles.opensea_link}
             target="__blank"
           >
             View all NFTs minted.
-          </a><br/>
+          </a>
+          <br />
           {renderButton()}
         </div>
       </div>
