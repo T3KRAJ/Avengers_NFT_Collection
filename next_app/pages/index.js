@@ -240,8 +240,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Crypto Devs</title>
-        <meta name="description" content="Whitelist-Dapp" />
+        <title>Avengers NFT</title>
+        <meta name="description" content="Avenger NFT Engine" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.main}>
